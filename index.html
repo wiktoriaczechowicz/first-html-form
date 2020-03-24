@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tytuł strony</title>
+  <meta name="description" content="Praca domowa moduł 4">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <h1>Florka HotDogi</h1>
+  <img
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFi80noroT8oZXp2luWNA2m6TQS5UcOM0kJOmZZJbCatUP1_5OOQ&s"
+    height="200" alt="hot dog">
+  <br>
+  <h3>Skomponuj swojego idealnego hot doga!</h3>
+  <h4>Krok 1: wybierz swoją bułkę: </h4>
+  <form>
+    <label>
+      <input type="radio" name="bulka" value="maslana" required> maślana
+    </label>
+    <label>
+      <input type="radio" name="bulka" value="pelnoziarnista"> pełnoziarnista
+    </label>
+    <label>
+      <input type="radio" name="bulka" value="bez-glutenu"> bez glutenu
+    </label>
+    <h4>Krok 2: wybierz swoją parówkę:</h4>
+    <label>
+      <input type="radio" name="parowka" value="parowka-wieprzowa" required> parówka wieprzowa
+    </label>
+    <label>
+      <input type="radio" name="parowka" value="kabanos"> kabanos
+    </label>
+    <label>
+      <input type="radio" name="parowka" value="wegeparowka"> wegeparówka
+    </label>
+    <h4>Krok 3: wybierz swoje dodatki:</h4>
+    <label>
+      <input type="checkbox" name="dodatki" value="cebulka"> cebulka <br>
+    </label>
+    <label>
+      <input type="checkbox" name="dodatki" value="pikle"> pikle <br>
+    </label>
+    <label>
+      <input type="checkbox" name="dodatki" value="marynowana-papryka"> marynowana papryka <br>
+    </label>
+    <label>
+      <input type="checkbox" name="dodatki" value="ser"> ser <br>
+    </label>
+    <label>
+      <input type="checkbox" name="dodatki" value="ketchup"> ketchup <br>
+    </label>
+    <label>
+      <input type="checkbox" name="dodatki" value="musztarda"> musztarda <br>
+    </label>
+    <h4>Krok 4: Wybierz najbliższy lokal:</h4>
+    <select name="lokal" required>
+      <option value="gdanks-oliwa" selected>Gdańsk Oliwa</option>
+      <option value="gdansk-wrzeszcz">Gdańsk Wrzeszcz</option>
+      <option value="gdansk-srodmiescie">Gdańsk Środmieście</option>
+    </select>
+    <h4>Krok 5: Podaj adres dostawy:</h4>
+    <label>Miasto
+      <input name="adres" required autocomplete="address-level2">
+    </label>
+    <br>
+    <label>Ulica
+      <input name="adres" required autocomplete="street-address">
+    </label>
+    <br>
+    <label>Nr mieszkania
+      <input name="adres" required autocomplete="apartment-number">
+    </label>
+    <br><br>
+    <textarea placeholder="Twoja wiadomość dla nas" rows="5"></textarea>
+    <br><br>
+    <button type="submit">Zamów</button>
+  </form>
+</body>
+
+
+<html>
